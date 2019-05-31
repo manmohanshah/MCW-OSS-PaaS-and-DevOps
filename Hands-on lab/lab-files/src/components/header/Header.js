@@ -53,7 +53,7 @@ export default class Header extends Component {
                     </Nav>
                     <Nav pullRight>
                         <NavItem eventKey={1} href={this.state.userId ? '/user/' + this.state.userId : 'user/login'}>
-                            {this.state.userName ? 'Welcome ' + this.state.userName : 'Sign In'}
+                            {this.state.userName ? 'Changed Welcome ' + this.state.userName : 'Sign In'}
                         </NavItem>
                         {this.state.userId ? <button onClick={this.logout.bind(this)} class="btn btn-outline-danger">Logout</button> : ''}
                         {/* <NavItem eventKey={2} href="#">
